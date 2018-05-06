@@ -1,26 +1,19 @@
-import { h, Component } from 'preact';
-import { Router } from 'preact-router';
+import RootStore from '../stores/rootStore'
 
-import Header from './header';
-import Home from '../routes/home';
+import Header from './header'
+import { List } from './list'
 
 if (module.hot) {
-	require('preact/debug');
+  require('preact/debug')
 }
 
-export default class App extends Component {
-	handleRoute = e => {
-		this.currentUrl = e.url;
-	};
+const rootStore = RootStore.create({
+  search: 'some search'
+})
 
-	render() {
-		return (
-			<div id="app">
-				<Header />
-				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-				</Router>
-			</div>
-		);
-	}
-}
+export const App = () => (
+  <div id="app">
+    <Header/>
+    <List rootStore={rootStore}/>
+  </div>
+)
