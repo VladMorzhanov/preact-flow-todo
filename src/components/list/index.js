@@ -1,5 +1,12 @@
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+  background-color: aqua;
+  margin-top: 100px;
+`
+
 export const List = ({rootStore}) => (
-  <div>
+  <Wrapper>
     {rootStore.search}
-  </div>
+  </Wrapper>
 )
