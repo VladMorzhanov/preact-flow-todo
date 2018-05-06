@@ -1,4 +1,4 @@
-# react-flow-todo
+# preact-flow-todo
 
 ## CLI Commands
 
