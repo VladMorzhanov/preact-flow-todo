@@ -1,5 +1,5 @@
-const preactCliFlow = require('./node_modules/preact-cli-plugin-flow');
+const preactCliFlow = require('./node_modules/preact-cli-plugin-flow')
 
 export default function (config) {
-	preactCliFlow(config);
+  preactCliFlow(config)
 }

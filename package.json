@@ -30,9 +30,11 @@
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.0",
     "jest": "^21.2.1",
+    "node-sass": "^4.9.0",
     "preact-cli": "^2.1.0",
     "preact-cli-plugin-flow": "^0.2.0",
-    "preact-render-spy": "^1.2.1"
+    "preact-render-spy": "^1.2.1",
+    "sass-loader": "^7.0.1"
   },
   "dependencies": {
     "mobx": "^3.0.0",
