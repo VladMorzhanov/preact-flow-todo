@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
-    "dev": "preact watch",
+    "build": "preact build --template src/template.html",
+    "serve": "preact build && preact serve --template src/template.html",
+    "dev": "preact watch --template src/template.html",
     "lint": "eslint src",
     "test": "jest ./tests"
   },
@@ -37,13 +37,16 @@
     "sass-loader": "^7.0.1"
   },
   "dependencies": {
-    "mobx": "^3.0.0",
-    "mobx-state-tree": "^1.4.0",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.10",
+    "mobx": "^4.2.1",
+    "mobx-preact": "^2.0.0",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
-    "preact-mobx": "^0.1.4",
     "preact-router": "^2.5.7",
-    "styled-components": "^3.2.6"
+    "styled-components": "^3.2.6",
+    "todomvc-app-css": "^2.1.2",
+    "todomvc-common": "^1.0.5"
   },
   "jest": {
     "verbose": true,

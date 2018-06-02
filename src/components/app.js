@@ -1,19 +1,25 @@
-import RootStore from '../stores/rootStore'
-
+import { h, Component } from 'preact'
+import rootStore, { rehydrate } from '../stores/rootStore'
 import Header from './header'
-import { List } from './list'
+import { Main } from './main'
+import { observer, Provider } from 'mobx-preact'
 
 if (module.hot) {
   require('preact/debug')
 }
 
-const rootStore = RootStore.create({
-  search: 'some search'
-})
+rehydrate(rootStore)
 
-export const App = () => (
-  <div id="app">
-    <Header/>
-    <List rootStore={rootStore}/>
-  </div>
-)
+@observer
+export class App extends Component {
+  render () {
+    return (
+      <Provider store={rootStore}>
+        <section id="app" className="todoapp">
+          <Header/>
+          <Main/>
+        </section>
+      </Provider>
+    )
+  }
+}
