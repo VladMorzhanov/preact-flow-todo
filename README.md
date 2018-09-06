@@ -29,16 +29,19 @@ This application allow you to:
 
 ## Technologies
 
-* Javascript
-* ES6
-* Preact
-* Preact CLI
-* Mobx
-* mobx-preact
-* Flow
-* Lodash
-* SASS
-* ESLint
+- <a href="https://preactjs.com/">Preact</a>
+- <a href="https://github.com/developit/preact-cli">Preact CLI</a>
+- <a href="https://flow.org/">Flow</a>
+- <a href="https://github.com/mobxjs/mobx-state-tree">Mobx-State-Tree</a>
+- <a href="https://github.com/mobxjs/mobx">Mobx</a>
+- <a href="https://www.styled-components.com/">Styled components</a>
+- <a href="https://webpack.js.org/">Webpack 4</a>
+- <a href="https://eslint.org/">ESLint</a>
+- <a href="https://github.com/prettier/prettier">Prettier</a>
+- <a href="https://webpack.js.org/concepts/hot-module-replacement/">HMR</a>
+- <a href="https://babeljs.io/">Babel</a>
+- <a href="https://postcss.org/">PostCSS</a>
+- <a href="https://sass-lang.com/">SASS</a>
 
 ## Contributing
 
